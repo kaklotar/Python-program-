@@ -1,0 +1,10 @@
+fav_foods = []
+
+while True:
+  print("Enter the food and q to exit",end="")
+  fav=input()
+  if str.lower(fav)=='q':
+    break
+  fav_foods.append(fav)
+
+print("favourite foods:=", fav_foods)
