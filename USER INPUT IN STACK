@@ -1,3 +1,5 @@
+#######################   1st normal prg #############################
+
 fav_foods = []
 
 while True:
@@ -8,3 +10,31 @@ while True:
   fav_foods.append(fav)
 
 print("favourite foods:=", fav_foods)
+
+
+###################################### 2nd stack program ####################################
+
+
+#################   LIST AS STACK   ########################
+
+# LAST ONE WE ADD, FIRST ONE TO BE REMOVED
+
+
+fav_foods = []
+
+while True:
+  print("Enter the food and q to exit:=  ",end="")
+  fav=input()
+  if str.lower(fav)=='q':
+    break
+  if str.lower(fav)=='r':
+    popped = fav_foods.pop()
+    print("removed:= " + popped)
+    print("all food:= ", fav_foods)
+    continue
+  
+  fav_foods.append(fav)
+  print("all food:= ", fav_foods)
+
+print("final foods:=", fav_foods)
+
