@@ -1,0 +1,22 @@
+#################   LIST AS QUEUE   ########################
+
+# FIRST ADDED IS THE FIRST REMOVED
+
+
+fav_foods = []
+
+while True:
+  print("[queue]Enter the food and q to exit:=  ",end="")
+  fav=input()
+  if str.lower(fav)=='q':
+    break
+  if str.lower(fav)=='eat':
+    popped = fav_foods.pop(0)
+    print("removed:= " + popped)
+    print("all food:= ", fav_foods)
+    continue
+  
+  fav_foods.append(fav)
+  print("all food:= ", fav_foods)
+
+print("final foods:=", fav_foods)
